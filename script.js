@@ -1,14 +1,10 @@
 // wraps my code
 window.onload = function(){ 
 
-
 // collect all the divs
 var divs = document.getElementsByClassName('draggable');
+
 // get max width and height
-
-// var winWidth = window.innerWidth;
-// var winHeight = window.innerHeight;
-
 var box = document.querySelector('.container');
 var maxWidth = box.clientWidth - 350;
 console.log("max width: " + maxWidth);
@@ -29,10 +25,8 @@ for ( var i=0; i < divs.length; i++ ) {
 
     // update top and left position
     thisDiv.style.left = posx +"px";
-    thisDiv.style.top = posy +"px";
-    
+    thisDiv.style.top = posy +"px";    
 }
-
 
 // jquery draggable
 $( function() {
@@ -54,7 +48,5 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-  
   
 };
